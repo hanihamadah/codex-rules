@@ -38,7 +38,7 @@ after `MEMORY.md` and `DECISIONS.md`, before choosing files to edit.
 | AI Assistants for Teachers Workshop | Internal | `AI_Assistants_for_Teachers_Workshop.docx`; `AI_Assistants_for_Teachers_Workshop_with_Leadership.docx`; `tools/build_ai_teachers_workshop_doc.py` | Not public | Generated DOCX artifacts | Render or inspect the DOCX before sharing | Add a short project note describing audience, version, and source script |
 | Physics Mastery Content Drafts | Gated | `content-drafts/` | Supabase/app state, not direct public files | Supabase import after review only | Review JSON/SQL, check live slugs, confirm idempotence | Turn the import pattern into `physics-content-import` skill |
 | Physics Mastery Engine | Gated, external repo | `/Users/Administrator1/Developer/physics-mastery-engine` | App URL not recorded here | Dedicated repo and app deploy pipeline | In that repo: read `AGENTS.md`, `WORKING_MEMORY.md`, `PROJECT_INDEX.md`, `README.md`; then run project checks | Do not work from this iCloud workspace; route to the dedicated repo |
-| Custom GPT Registry | Missing | `CUSTOM_GPTS.md` not created yet | Not applicable | Local registry first | Confirm each GPT has purpose, instructions, files, actions, limits | Next item: create `CUSTOM_GPTS.md` |
+| Custom GPT Registry | Draft | `CUSTOM_GPTS.md` | Not applicable | Local registry first | Confirm each GPT has purpose, instructions, files, actions, limits | Populate with exported GPT configurations, then audit overlap and permissions |
 | Connector and Plugin Policy | Missing | `CONNECTORS_AND_PLUGINS.md` not created yet | Not applicable | Local policy first | Confirm each connector has a job and safety boundary | Create after `CUSTOM_GPTS.md` |
 
 ## Project-Specific Read-First Files
@@ -85,8 +85,8 @@ Use the dedicated repo:
 ## Current One-By-One Fix Sequence
 
 1. Create this `PROJECT_INDEX.md`. Status: done.
-2. Create `CUSTOM_GPTS.md`.
-3. Create `CONNECTORS_AND_PLUGINS.md`.
+2. Create `CUSTOM_GPTS.md`. Status: done.
+3. Create `CONNECTORS_AND_PLUGINS.md`. Status: next.
 4. Expand `.gitignore` hygiene.
 5. Turn repeated workflows into skills.
 6. Preserve draft gates in the relevant workflow files.
