@@ -25,7 +25,7 @@ after `MEMORY.md` and `DECISIONS.md`, before choosing files to edit.
 
 | Project | Status | Source Folder | Known URL | Deploy Target | Verification | Next Useful Action |
 | --- | --- | --- | --- | --- | --- | --- |
-| Codex Rules | Live | `AGENTS.md`, `MEMORY.md`, `DECISIONS.md`, `PROJECT_INDEX.md` | `https://github.com/hanihamadah/codex-rules` | GitHub repo `hanihamadah/codex-rules` | `git status --short`; confirm files in repo | Keep central rule files synced after each durable decision |
+| Codex Rules | Live | `AGENTS.md`, `MEMORY.md`, `DECISIONS.md`, `PROJECT_INDEX.md`, `CUSTOM_GPTS.md`, `CONNECTORS_AND_PLUGINS.md` | `https://github.com/hanihamadah/codex-rules` | GitHub repo `hanihamadah/codex-rules` | `git status --short`; confirm files in repo | Keep central rule files synced after each durable decision |
 | Physics Learning Tools Hub | Live | `index.html`; `Physics Learning Tools/index.html` | `https://physics-learning-tools.hani-hamadeh.workers.dev/` | Cloudflare Workers/Pages style public hub | Open the URL and verify all tool cards | Reconcile duplicate root and folder hub files; keep links current |
 | Classroom Field Lab | Draft | `classroom-field-lab/` | Local preview only unless deployed | Suggested Cloudflare Pages project `classroom-field-lab` | From `classroom-field-lab/`: `python3 -m http.server 4173` | Review current visual state, then publish only after approval |
 | Distance and Displacement Simulation | Live | `Distance and Displacement Sim/` | `https://hanihamadah.github.io/distance-displacement-simulation/` | GitHub Pages | Open `Distance and Displacement Sim/index.html` or live URL | Add worksheet/remediation links only if useful for the hub |
@@ -39,7 +39,7 @@ after `MEMORY.md` and `DECISIONS.md`, before choosing files to edit.
 | Physics Mastery Content Drafts | Gated | `content-drafts/` | Supabase/app state, not direct public files | Supabase import after review only | Review JSON/SQL, check live slugs, confirm idempotence | Turn the import pattern into `physics-content-import` skill |
 | Physics Mastery Engine | Gated, external repo | `/Users/Administrator1/Developer/physics-mastery-engine` | App URL not recorded here | Dedicated repo and app deploy pipeline | In that repo: read `AGENTS.md`, `WORKING_MEMORY.md`, `PROJECT_INDEX.md`, `README.md`; then run project checks | Do not work from this iCloud workspace; route to the dedicated repo |
 | Custom GPT Registry | Draft | `CUSTOM_GPTS.md` | Not applicable | Local registry first | Confirm each GPT has purpose, instructions, files, actions, limits | Populate with exported GPT configurations, then audit overlap and permissions |
-| Connector and Plugin Policy | Missing | `CONNECTORS_AND_PLUGINS.md` not created yet | Not applicable | Local policy first | Confirm each connector has a job and safety boundary | Create after `CUSTOM_GPTS.md` |
+| Connector and Plugin Policy | Draft | `CONNECTORS_AND_PLUGINS.md` | Not applicable | Local policy first | Confirm each connector has a job and safety boundary | Use before connector/plugin actions; revise as workflows mature |
 
 ## Project-Specific Read-First Files
 
@@ -49,6 +49,8 @@ after `MEMORY.md` and `DECISIONS.md`, before choosing files to edit.
 - `MEMORY.md`
 - `DECISIONS.md`
 - `PROJECT_INDEX.md`
+- `CUSTOM_GPTS.md`
+- `CONNECTORS_AND_PLUGINS.md`
 - `README.md`
 
 ### Classroom Field Lab
@@ -86,8 +88,8 @@ Use the dedicated repo:
 
 1. Create this `PROJECT_INDEX.md`. Status: done.
 2. Create `CUSTOM_GPTS.md`. Status: done.
-3. Create `CONNECTORS_AND_PLUGINS.md`. Status: next.
-4. Expand `.gitignore` hygiene.
+3. Create `CONNECTORS_AND_PLUGINS.md`. Status: done.
+4. Expand `.gitignore` hygiene. Status: next.
 5. Turn repeated workflows into skills.
 6. Preserve draft gates in the relevant workflow files.
 7. Avoid adding more tools until routing and verification are stable.
